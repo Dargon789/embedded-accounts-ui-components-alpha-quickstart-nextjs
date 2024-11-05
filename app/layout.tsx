@@ -9,8 +9,8 @@ import { Providers } from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Embedded Accounts UI Components Quickstart NextJs Template",
-  description: "Embedded Accounts UI Components Quickstart NextJs Template",
+  title: "Account Kit Quickstart",
+  description: "Account Kit Quickstart NextJS Template",
 };
 
 export default function RootLayout({

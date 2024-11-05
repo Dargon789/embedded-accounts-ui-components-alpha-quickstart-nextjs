@@ -10,8 +10,18 @@ const uiConfig: AlchemyAccountsUIConfig = {
   illustrationStyle: "outline",
   auth: {
     sections: [
-      [{ type: "email" as const }],
-      [{ type: "passkey" as const }, { type: "external_wallets" }],
+      [{ type: "email" }],
+      [
+        { type: "passkey" },
+        { type: "social", authProviderId: "google", mode: "popup" },
+        { type: "social", authProviderId: "facebook", mode: "popup" },
+      ],
+      [
+        {
+          type: "external_wallets",
+          walletConnect: { projectId: "your-project-id" },
+        },
+      ],
     ],
     addPasskeyOnSignup: false,
   },
@@ -23,6 +33,7 @@ export const config = createConfig(
     chain: sepolia,
     ssr: true, // more about ssr: https://accountkit.alchemy.com/react/ssr
     storage: cookieStorage, // more about persisting state with cookies: https://accountkit.alchemy.com/react/ssr#persisting-the-account-state
+    enablePopupOauth: true, // must be set to "true" if you plan on using popup rather than redirect in the social login flow
   },
   uiConfig
 );

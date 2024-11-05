@@ -1,7 +1,7 @@
 See [accountkit.alchemy.com](https://accountkit.alchemy.com/) for the most up to date documentation!
 
-- [quick start guide](https://accountkit.alchemy.com/react/quickstart) to test out Alchemy Account Kit Alpha UI Components
-- [demo of UI components](https://aa-sdk-ui-demo.vercel.app/)
+- [quick start guide](https://accountkit.alchemy.com/react/quickstart) to Account Kit
+- [demo](https://demo.alchemy.com/)
 
 ![image](https://github.com/user-attachments/assets/b7a820e7-1927-4bee-8eaa-52ca4af0f87a)
 
@@ -12,14 +12,16 @@ This is a [Next.js](https://nextjs.org/) template bootstrapped with [`create-nex
 First, download the template:
 
 ```bash
-yarn create next-app my-smart-app -e https://github.com/avarobinson/embedded-accounts-ui-components-alpha-quickstart-nextjs
+yarn create next-app account-kit-app -e https://github.com/avarobinson/account-kit-quickstart
 ```
 
 ### Get you alchemy api key
+
 - Create a new embedded accounts configuration for an alchemy app in your [dashboard](https://dashboard.alchemy.com/accounts)
 - Replace the api key in the config.ts file
 
 ### Run the app
+
 ```bash
 yarn dev
 ```
